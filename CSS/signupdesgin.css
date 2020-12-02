@@ -1,0 +1,159 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+body{
+	margin:0;
+	padding:0;
+	background-color: #000;	
+	color: #000;
+}
+
+/*headerpart*/
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.flex-space{
+  display: flex;
+  justify-content: space-between; 
+}
+.flex{
+  display: flex;
+} 
+.login-container{
+	height:100vh;
+	position: relative;
+}
+.loginform,.newform{
+	width:50%;
+	background-color: #000;
+	color: #fff;
+	justify-content: flex-end;
+}
+.container{
+	margin: 0 auto;
+	width:90%;
+}
+
+.image{
+	margin:0;
+	width:50%;
+	background: url('../Images/loginpage.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*border:1px solid red;*/
+	height:100vh;
+}
+img{
+	max-width: 100%;
+}
+h2{
+	text-align: center;
+	color: #fff;
+}
+.firstinput{
+	width:70%;
+	margin-bottom:1em;
+	border:none;
+	border-bottom: 0.1em solid gray;
+	outline: none;
+	color: #fff;
+	margin-top:1em;
+	background: transparent;
+	font-size: 1.2rem;
+}
+.firstinput:hover,.firstinput:focus{
+	opacity: .75;
+}
+
+.login-but, .new-but{
+	cursor: pointer;
+}
+.hide{
+	display: none;
+}
+.visible{
+	display: block;
+}
+.button:disabled{
+	cursor:not-allowed;
+	color:red;
+	border: 0.2em solid red; 
+}
+.button{
+	width: 50%;
+	padding: 1em;
+	font-size: 1rem;
+	font-weight: bolder;
+	outline: none;
+	border: 0.2em solid #fff;
+	color: #fff;
+	background: transparent;
+	cursor: pointer;
+}
+
+span{
+	text-align: center;
+	font-weight: bolder;
+}
+.input-box{
+	text-align: center;	
+	margin-bottom: 1em;	
+}
+.login-bottom{
+	text-align: center;	
+	padding: 1em;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.icon-box{
+	width: 20%;
+}
+.sub-button{
+	margin: 0 auto;
+	display:flex;
+	justify-content: center;
+	margin-bottom:10%;
+	margin-top: 1em;
+}
+.text{
+	align-self: center;
+	align-items: center;
+}
+.phone-nav{	
+  display:block;
+}
+.desktop--nav{
+  display: none;
+}
+/*dektop */
+@media (min-width:720px){
+	.image{
+		width: 50%;
+	}
+	.login-but, .new-but{
+	cursor: pointer;
+	}
+	.firstinput{
+	width:50%;
+	}
+	 /*.phone-nav{
+      display: none;
+    }
+    .desktop--nav{
+    	
+      display:block;
+      }*/
+/*  .header-button{
+    outline: none;
+    border:0.1em solid #fff;
+    background:transparent;
+    color: #fff;
+  }*/
+}
+
+

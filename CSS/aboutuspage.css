@@ -1,0 +1,161 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+.container{
+  width:95%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*headerpart*/
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.flex-space{
+  display: flex;
+  justify-content: space-between; 
+}
+.flex{
+  display: flex;
+}
+  .page-title{
+    text-align: center;
+    font-size:3em;
+  }
+
+  /*middle*/
+  .title{
+    text-align: center;
+  }
+  img{
+    max-width: 100%;
+  }
+
+.mid--part-2{
+  display: block;
+  /*border: 2px solid #cdcdcd;*/
+}
+
+.deatil-page{
+  font-size:1.5em;
+  line-height:2em;
+  padding: 1em;
+  text-align: justify;
+  text-justify: inter-word;
+  }
+
+.about-text ,.part-1{
+  /*border: 1px solid blue;*/
+}
+
+.image{
+  width: 100%;
+}
+.image-container{
+  width:100%;
+    /*border: 1px solid yellow;*/
+}
+
+.firstinput{
+  width:80%;
+  margin-bottom:1em;
+  border:none;
+  border-bottom: 0.1em solid gray;
+  outline: none;
+  color: #fff;
+  margin-top:1em;
+  background: transparent;
+  font-size: 1.2em;
+}
+.firstinput:hover,.firstinput:focus{
+  opacity: .75;
+}
+.button{
+  width:30%;
+  padding:0.5em;
+  font-size: 1em;
+  font-weight: bolder;
+  outline: none;
+  border: 0.2em solid #fff;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+}
+.part-2{
+  padding: 1.5em;
+  /*border: 1px solid red;*/
+}
+.heading{
+padding-left:1em;
+font-size:2.5em;
+/*border: 1px solid red;*/
+}
+.page--text{
+font-size: 1.5em;
+margin:1em;
+display: flex;
+/*border: 1px solid blue;*/
+}
+.mid--part{
+  display: block;
+  /*border: 1px solid green;*/
+}
+  /*middle*/
+.phone-nav{
+  display:block;
+}
+.desktop--nav{
+  display: none;
+}
+/*dektop */
+@media (min-width:720px){
+    .phone-nav{
+      display: none;
+    }
+    .desktop--nav{
+      display: block;
+    }
+  .header-button{
+    outline: none;
+    border:0.1em solid #fff;
+    background:transparent;
+    color: #fff;
+    /*font-size: 1.5em;*/
+  }
+
+.about-text ,.part-1{
+  width: 50%;
+  /*border: 1px solid blue;*/
+}
+.image-container{
+  width: 50%;
+    /*border: 1px solid yellow;*/
+}
+.mid--part-2{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /*border: 1px solid yellow;*/
+}
+.mid--part{
+width: 100%;
+display: flex;
+justify-content: space-between;
+/*border: 1px solid red;*/
+}
+.page--text{
+padding-left:1em;
+/*border: 1px solid yellow;*/
+}
+.part-2{
+  width: 50%;
+  padding: 1.5em;
+}
+}

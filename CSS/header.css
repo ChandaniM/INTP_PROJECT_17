@@ -1,0 +1,134 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+.container{
+  width:95%;
+  margin: 0 auto;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+/*headerpart*/
+.logo{
+  width: 3em;
+  height:3em;
+  /*margin-left:0.5em;*/
+  /*margin-right: 1em;*/
+}
+.flex-space{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+.flex{
+  align-items: center;
+  display: flex;
+}
+header{
+  position:-webkit-sticky;
+  top:0;
+  left:0;
+  position: sticky;
+  overflow:hidden;
+  width:100%;
+  box-shadow:0 0.5px 3px 0 #808080;
+  padding: 0.2em 0;
+  background-color:#000;
+  color: #fff;
+  z-index: 5000;
+}
+header .container{
+  /*padding:0.3em 0;*/
+  /*border: 1px solid red;*/
+
+}
+.nav-bar--primary{
+ list-style-type: none; 
+ /*border:1px solid yellow;*/
+}
+.nav-bar--secondary{
+  /*border: 1px solid pink;*/
+}
+.nav-items+.nav-items{
+  margin-left:1em;
+}
+.header-button{
+  outline: none;
+  border:0.1em solid #fff;
+  background:transparent;
+  color: #fff;
+  padding:0.3em 0.5em;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius:5px;
+}
+.header-button:hover{
+  color:#000;
+  background:#FFF;
+  cursor:pointer;
+}
+.phone-nav .container{
+  /*border:1px solid red;*/
+}
+.mobile-nav-bar  li{
+margin-left: 1em;
+}
+img{
+  max-width: 100%;
+}
+.hide{
+  display: none;
+}
+.visible{
+  display: block;
+}
+.cart-button{
+  cursor: pointer;
+  border:none;
+  background: transparent;
+  color:#FFF;
+  font-weight: bold;
+  outline:none;
+}
+.cart-icon{
+  background: url("../Icons/shopping-cart.svg");
+  background-repeat: no-repeat;
+  background-size: 2em;
+  filter: invert(100);
+  height:2em;
+  width:2em;
+}
+.phone-nav{
+  display:block;
+}
+.desktop--nav{
+  display: none;
+}
+@media (min-width: 720px){
+  .phone-nav{
+      display: none;
+    }
+    .desktop--nav{
+      display: block;
+    }
+    .header-button{
+  outline: none;
+  border:0.1em solid #fff;
+  background:transparent;
+  color: #fff;
+  padding:0.5em 0.7em;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius:5px;
+}
+.logo{
+  margin-right: 1em;
+  }
+}

@@ -1,0 +1,102 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  /*overflow: hidden;*/
+}
+.container{
+  width:95%;
+  margin: 0 auto;
+  padding: 0;
+  /*overflow: hidden;*/
+}
+
+/*headerpart*/
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.flex-space{
+  display: flex;
+  justify-content: space-between; 
+}
+.flex{
+  display: flex;
+}
+/*middle*/
+ .page-title{
+    text-align: center;
+    font-size:3em;
+  }
+/*vegpart*/
+.veg-container{
+  /*overflow: hidden;*/
+}
+.veg-dishes{
+  /*border: 1px solid red;
+  overflow-y: scroll;*/
+  padding: 1em;
+  margin: 3% 0%;
+  overflow-x: auto;
+  scrollbar-width:none;
+}
+
+.veg-container--title{
+  margin-bottom:2%;
+}
+
+
+.dish-1{
+  margin-bottom: 2em; 
+  margin-top: 1em;
+  position: relative;
+  display: block;
+  flex-shrink: 0;
+  border: 1px solid #fff;
+}
+.dish-item-img{
+  width: 100%;
+}
+.dish-detail{
+    /*padding: 2px 1em;*/
+    height:12em;
+    margin-bottom:3em;
+    /*border: 1px solid red;*/
+
+}
+.card-button{
+background:transparent;
+color: #fff;
+padding:0.5em 1em;
+/*border-radius:;*/
+width: 100%;
+position: absolute;
+bottom:0;
+}
+/*vegpart*/
+/*middle*/
+/*dektop */
+@media (min-width:720px){
+    
+  .page-title{
+    text-align: center;
+    font-size:3em;
+  }
+  .veg-dishes{
+    display: flex;
+    /*border: 2px solid green;*/      
+    justify-content: space-between;
+  }
+  .dish-1{
+    width:22.9%;
+  }
+  .dish-1+.dish-1{
+    margin-left:2em;
+   }
+}

@@ -1,0 +1,135 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+.container{
+  width:95%;
+  margin: 0 auto;
+  padding: 0;
+}
+/*headerpart*/
+.logo{
+  width: 3em;
+  height:3em;
+  margin-left:0.5em;
+}
+.flex-space{
+  display: flex;
+  justify-content: space-between; 
+}
+.flex{
+  display: flex;
+}
+.image-container{
+    width:100%;
+
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.sub-header{
+  /*border: 1px solid green;*/
+  width:85%;
+  padding: 0.3em;
+  margin: 0 auto;
+}
+/*end header*/
+.span-text{
+  display: block;
+  text-align:justify;
+  line-height:2em;
+  font-size:1rem;
+  padding:1em 0;
+    /*border:1px solid #fff;*/
+}
+ .background{
+  width:100%;
+  background: url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9') no-repeat center center fixed;
+  background-size:cover;
+  height:100vh;
+  /*border: 1px solid skyblue;*/
+}
+/*Middle*/
+.middle{
+  width: 100%;
+}
+.card{
+  text-align: center;
+}
+.sub-button{
+  width: 40%;
+  outline: none;
+  color: #fff;
+  padding:1em;
+  border:0.1em solid #fff;
+  background-color:transparent;
+  font-size: 1rem;
+}
+.card-bottom{
+  justify-content: center;
+  padding:1em 0;
+}
+.phone-nav{
+  display:block;
+}
+.desktop--nav{
+  display: none;
+}
+ .title-sub{
+    font-size:1.5em;
+ }
+ 
+/*dektop */
+@media (min-width:720px){
+    .phone-nav{
+      display: none;
+    }
+    .desktop--nav{
+      display: block;
+    }
+  .header-button{
+    outline: none;
+    border:0.1em solid #fff;
+    background:transparent;
+    color: #fff;
+  }
+  .card{
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .image-container{
+    width: 50%;
+  }
+  .sub-button{
+     font-size: 1.2em;
+  }
+  .span-text{
+    font-size: 1.5em;
+  }
+  .box{
+    display: flex;
+  }
+  .title-sub{
+    font-size:2em;
+  }
+  .sub-box{
+    border:1px solid white;
+  }
+  .center-box{
+    flex-direction: row-reverse;
+  }
+  .logo{
+    width: 3em;
+    height:3em;
+    border:1px solid pink;
+  }
+}

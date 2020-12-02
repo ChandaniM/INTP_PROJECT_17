@@ -1,0 +1,94 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  /*overflow: hidden;*/
+}
+.container{
+  width:95%;
+  margin: 0 auto;
+  padding: 0;
+  /*overflow: hidden;*/
+}
+img{max-width: 100%;}
+/*headerpart*/
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.flex-space{
+  display: flex;
+  justify-content: space-between; 
+}
+.flex{
+  display: flex;
+}
+/*middle page*/
+ .page-title{
+    text-align: center;
+    font-size:2em;
+  }
+
+ .middle-page{
+  /*border: 1px solid red;*/
+  padding: 1em;
+ }
+.img-container{
+  width:5em;
+  /*border: 1px solid blue;*/
+}
+.Images--dish{
+  width: 100%;
+}
+.cart--1{
+  /*width:35%;*/
+  padding:0.5em;
+  border-radius:0.2em;
+  border: 1px solid #808080;
+}
+.dish--name{
+  width:35%;
+  /*border:1px solid  yellow;*/
+}
+.cart--detail{
+  /*border: 1px solid yellow;*/
+  align-self: center;
+  /*border:1px solid red;*/
+  width:60%;
+}
+/*.dish--items+.dish--items{
+margin-left:1em;
+}*/
+.clear{
+  width: 1.2em;
+  font-size:1.2em;
+  align-self: center;
+}
+.cart-page{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-column-gap: 10em;
+ grid-row-gap: 1em;
+ /*margin:0 auto;*/
+  /*border: 1px solid green;*/
+}
+.order-button{
+  border:1px solid  #FFF;
+  color:#FFF;
+  width: 20%;
+  padding: 0.5em 1em;
+  margin:0 40%;
+  /*border:0;*/
+  border-radius: 5px;
+  background: transparent;
+  font-weight: bold;
+}
+.order-button:hover{
+  cursor: pointer;
+  color: #000;
+  background-color:#FFF;
+}

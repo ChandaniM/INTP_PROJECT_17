@@ -1,0 +1,99 @@
+
+/*footer*/
+  .box-footer{
+      /*border:1px solid blue;*/
+      padding: 1em;
+  }
+.flex-space{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+span,p,pre,h3{
+  color: #fff;
+}
+.footer span{
+  display: block;
+}
+.footer-left{
+  /*border:1px solid yellow;*/
+  width:30%;
+}
+.footer-right{
+  /*border:1px solid lime;*/
+  flex-direction: column;
+}
+.footer{
+  width: 100%;
+  padding: 1em;
+    box-shadow:0 0.5px 3px 0 #808080;
+}
+/*Icons*/
+.tel-icon{
+  background: url('../Icons/call.svg');
+}
+.email-icon{
+  background: url('../Icons/email.svg');
+}
+.Icon{
+  display:flex;
+  justify-content: space-between;
+  width: 30%;
+  /*border: 1px solid red;*/
+}
+.insta-icon{
+  background: url('../Icons/instagram.svg');
+  background-size: 2em;
+  background-repeat: no-repeat;
+  background-position:center;
+  height: 2em;
+  width:2em;
+}
+.twitter-icon{
+  background: url('../Icons/twitter.svg');
+  background-size: 2em;
+  background-repeat: no-repeat;
+  background-position:center;
+  filter: invert(100);
+  height: 2em;
+  width:2em;
+}
+.zomato-icon{
+  background: url('../Icons/zomato.svg');
+  background-size: 2em;
+  background-repeat: no-repeat;
+  background-position:center;
+  filter: invert(0);
+  height: 2em;
+  width:2em;
+}
+.swiggy-icon{
+  background: url('../Icons/swiggy.svg');
+  background-size: 2em;
+  background-repeat: no-repeat;
+  background-position:center;
+  filter: invert(0);
+  height: 2em;
+  width:2em;
+}
+.footer-right h3{
+  text-align: center;
+}
+.icon{
+  background-size: 2em;
+  background-repeat: no-repeat;
+  background-position:center;
+  height: 2em;
+  width:2em;
+  filter: invert(100);
+}
+
+
+  /*footer*/
+
+@media (min-width:720px){
+   .footer-right{
+    width:30%;
+  align-self: center;
+   }
+}
