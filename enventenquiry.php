@@ -16,11 +16,7 @@
 
 <!-- middlepage -->
 <div class="mid-page">
-	<!-- <div class="title">
-		<h2 class="title-page">Events</h2>
-	</div> -->
-	<!-- box1 -->
-		<div class="box flex-space">
+		<div class="box">
 			<div class="envent-detail">
 				<div class="event-title">
 					<h1>EVENT</h1>
@@ -37,12 +33,7 @@
 		</div>
 	<!-- box1 -->
 	<!-- box2 -->
-		<div class="box flex-space">
-				<div class="image-container">
-				<img src="Images/wedding12.jpg" alt="Event" class="image mySlides">
-				<img src="Images/wedding2.jpg" alt="Event" class="image mySlides">
-				<img src="Images/wedding3.jpg" alt="Event" class="image mySlides">
-			</div>
+		<div class="box reverse-flex">
 			<div class="envent-detail Design-text">
 				<div class="event-title">
 					<h1>Wedding</h1>
@@ -53,10 +44,16 @@
 					</p>
 				</div>
 			</div>
+			<div class="image-container">
+					<img src="Images/wedding12.jpg" alt="Event" class="image mySlides">
+					<img src="Images/wedding2.jpg" alt="Event" class="image mySlides">
+					<img src="Images/wedding3.jpg" alt="Event" class="image mySlides">
+				</div>
+
 		</div>
 	<!-- box2 -->
 		<!-- box3 -->
-		<div class="box flex-space">
+		<div class="box">
 			<div class="envent-detail">
 				<div class="event-title">
 					<h1>Private Dining Room</h1>
@@ -75,12 +72,7 @@
 		</div>
 	<!-- box3 -->
 		<!-- box4 -->
-		<div class="box flex-space">
-			<div class="image-container">
-				<img src="Images/birthday3.jpg" alt="Event" class="image birthdayclass">
-				<img src="Images/birthday2.jpg" alt="Event" class="image birthdayclass">
-				<img src="Images/birthday1.jpg" alt="Event" class="image birthdayclass">
-			</div>
+		<div class="box reverse-flex">
 			<div class="envent-detail Design-text">
 				<div class="event-title">
 					<h1>Brithday</h1>
@@ -91,44 +83,49 @@
 					</p>
 				</div>
 			</div>
+			<div class="image-container">
+				<img src="Images/birthday3.jpg" alt="Event" class="image birthdayclass">
+				<img src="Images/birthday2.jpg" alt="Event" class="image birthdayclass">
+				<img src="Images/birthday1.jpg" alt="Event" class="image birthdayclass">
+			</div>
 		</div>
 	<!-- box4 -->
 <!-- box5 -->
-		<div class="box flex-space">
+		<div class="box ">
 			<div class="envent-detail">
 				<div class="event-title">
 					<h1>EVENT ENQUIRY</h1>
 				</div>
-				<div class="mid-par">
+				<div class="mid-par	">
 						<div class="input-box--1">
 							<input type="text" name="fname" placeholder="NAME" class="input-text"><br>
 							<input type="email" placeholder="EMAIL" class="input-text">
 						</div>
-						<div class="input-box flex-space">
-								<div>
+						<div class="input-box flex-space input-box-text-design">
+								<div class="chage-design">
 									<label>Contact Number</label><br>
 									<input type="tel" placeholder="Mobile" class="input-box-pro">
 								</div>
-								<div>
+								<div class="chage-design">
 									<label>Lunch or Dinner</label><br>
-								 <select class="input-box--change">
-									<option value="Lunch">Lunch</option>
-									<option value="dinner">Dinner</option>
-								</select>
+									 <select class="input-box--change">
+										<option value="Lunch">Lunch</option>
+										<option value="dinner">Dinner</option>
+									</select>
 								</div>
 						</div>
-						<div class="input-box flex-space">
-							<div>
+						<div class="input-box flex-space input-box-text-design ">
+							<div class="chage-design">
 								<label>Date of Event</label><br>
 								<input type="date" class="input-box-pro">
 							</div>
-							<div>
+							<div class="chage-design">
 								<label>Number of Guests</label><br>
 								<input type="number" name="" placeholder="Guests" class="input-box-pro">
 							</div>
 						</div>
-						<div class="input-box flex-space">
-							<div>
+						<div class="input-box flex-space input-box-text-design">
+							<div class="chage-design">
 								<label>Nature of Events</label><br>
 								 <select class="input-box-pro">
 									<option value="Lunch">Engagement party</option>
@@ -142,9 +139,9 @@
 									<option value="wedding">Other's</option>
 								</select>
 							</div>
-							<div>
+							<div class="chage-design">
 							<label>Event Time </label><br>	
-							 <select class="input-box--change">
+							 <select class="input-box--change design-box">
 							 	<option value="Lunch">Lunch 12:00AM</option>
 							 	<option value="Lunch">Lunch 1:00PM</option>
 							 	<option value="Lunch">Lunch 2:00PM</option>

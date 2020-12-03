@@ -27,21 +27,17 @@ a{
 
 /*middle*/
 .textarea-box{
-	width: 100%;
+  width: 100%;
 }
 .input-box--1{
-width:55%;
 margin: 0 auto;
-/*border: 1px solid red;*/
 }
 .input-box{
-	/*border:1px solid green;*/
-	margin: 0 auto;
-	width:55%;
+  margin: 0 auto;
 }
 .input-box-pro{
 color: #fff;
-background: transparent;	
+background: transparent;  
 }
 .input-box--change{
 width:100%;
@@ -49,71 +45,76 @@ color: #fff;
 background: transparent;
 }
 .input-text{
-	width:100%;
-	outline: none;
-	color: #fff;
-	margin-bottom:1em;
-	font-size: 1.2rem;
-	background: transparent;
-	border-bottom: 0.1em solid #fff;
+  width:100%;
+  outline: none;
+  color: #fff;
+  margin-bottom:1em;
+  font-size: 1.2rem;
+  background: transparent;
+  border-bottom: 0.1em solid #fff;
 }
 .button-box{
 width:100%;
 padding:0.2em;
-font-size: 1.2em;	
+font-size: 1.2em; 
 outline: none;
 border:0.1em solid #fff;
 background:transparent;
 color: #fff;
 }
 .mid-par{
-	padding: 1em;
-	font-size: 1.3em;
-	line-height: 1.6em;
+  padding: 1em;
+  font-size: 1.3em;
+  line-height: 1.6em;
 }
 .title-page{
-	text-align: center;
-	font-size: 2em;
+  text-align: center;
+  font-size: 2em;
 }
 .event-title{
-	text-align: center;
+  text-align: center;
   font-size: 2rem;
 }
-.box{
-	/*border: 3px solid red;*/
-}
-.image-container{
-	width: 50%;
-}
-.envent-detail{
-	width: 50%;
-}
-.Design-text{
-  margin-bottom:30em;
-  /*border: 1px solid red;*/
-}
 .image{
-	width: 100%;
+  width: 100%;
 }
+ .chage-design{
+    display: flex;
+    width:45%;
+    flex-direction: column;
+  }
 /*middle*/
-.phone-nav{
-  display:block;
-}
-.desktop--nav{
-  display: none;
-}
 /*dektop */
 @media (min-width:720px){
-  .phone-nav{
-      display: none;
-    }
-  .desktop--nav{
-      display: block;
-    }
-  .header-button{
-    outline: none;
-    border:0.1em solid #fff;
-    background:transparent;
-    color: #fff;
+  .box{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+  }
+  .envent-detail{
+  width: 50%;
+  }
+  .image-container{
+   width: 50%;
+  }
+  .reverse-flex{
+    flex-direction: row-reverse;
+  }
+  .input-box-text-design{
+    flex-direction:row;
+  }
+  .input-box{
+  width:55%;
+  }
+  .input-box--1{
+  width:55%;
+  }
+  .design-box{
+    width: 100%;
+  }
+  .chage-design{
+    display: flex;
+    width:45%;
+    flex-direction: column;
   }
 }
