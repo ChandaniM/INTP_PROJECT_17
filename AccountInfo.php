@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
+    
     <link rel="stylesheet" href="./CSS/footer.css">
     <link href="./CSS/account.css" rel="stylesheet" type="text/css">    
     
@@ -79,9 +79,9 @@
                                         </div>
                                         <div class="row">
                                             <form mehod="post">
-                                                <button name="edit" class="edit-button">Edit</button>
+                                                <button name="edit" class="edit-button button">Edit</button>
                                                 </form>
-                                                <button class="logout" name="logout">LOGOUT</button>
+                                                <button class="logout button" name="logout">LOGOUT</button>
                                         </div>
                                     ';
                                 }
