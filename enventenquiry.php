@@ -1,3 +1,7 @@
+<?php
+	session_start();
+	include 'connection.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -96,19 +100,20 @@
 				<div class="event-title">
 					<h1>EVENT ENQUIRY</h1>
 				</div>
+				<form method="post">
 				<div class="mid-par	">
 						<div class="input-box--1">
 							<input type="text" name="fname" placeholder="NAME" class="input-text"><br>
-							<input type="email" placeholder="EMAIL" class="input-text">
+							<input type="email" name="email" placeholder="EMAIL" class="input-text">
 						</div>
 						<div class="input-box flex-space input-box-text-design">
 								<div class="chage-design">
 									<label>Contact Number</label><br>
-									<input type="tel" placeholder="Mobile" class="input-box-pro">
+									<input type="tel" name="mobile" placeholder="Mobile" class="input-box-pro">
 								</div>
 								<div class="chage-design">
 									<label>Lunch or Dinner</label><br>
-									 <select class="input-box--change">
+									 <select class="input-box--change" name="option">
 										<option value="Lunch">Lunch</option>
 										<option value="dinner">Dinner</option>
 									</select>
@@ -117,17 +122,17 @@
 						<div class="input-box flex-space input-box-text-design ">
 							<div class="chage-design">
 								<label>Date of Event</label><br>
-								<input type="date" class="input-box-pro">
+								<input type="date" name="date" class="input-box-pro">
 							</div>
 							<div class="chage-design">
 								<label>Number of Guests</label><br>
-								<input type="number" name="" placeholder="Guests" class="input-box-pro">
+								<input type="number" name="numberofguest" placeholder="Guests" class="input-box-pro">
 							</div>
 						</div>
 						<div class="input-box flex-space input-box-text-design">
 							<div class="chage-design">
 								<label>Nature of Events</label><br>
-								 <select class="input-box-pro">
+								 <select class="input-box-pro" name="option1">
 									<option value="Lunch">Engagement party</option>
 									<option value="birthday">Birthday</option>
 									<option value="private party">Private party</option>
@@ -141,7 +146,7 @@
 							</div>
 							<div class="chage-design">
 							<label>Event Time </label><br>	
-							 <select class="input-box--change design-box">
+							 <select class="input-box--change design-box" name="option2">
 							 	<option value="Lunch">Lunch 12:00AM</option>
 							 	<option value="Lunch">Lunch 1:00PM</option>
 							 	<option value="Lunch">Lunch 2:00PM</option>
@@ -155,12 +160,13 @@
 						</div>
 						<div class="input-box">
 								<label>Feedback</label>
-								<textarea cols="30" rows="3" placeholder="Message......" class="input-box-pro textarea-box"></textarea><br>
+								<textarea cols="30" name="Feedback" rows="3" placeholder="Message......" class="input-box-pro textarea-box"></textarea><br>
 						</div>
 						<div class="input-box" >
-							<button class="button-box">Submit</button>
+							<button class="button-box" name="Submit">Submit</button>
 						</div>
 				</div>
+			</form>
 			</div>
 			<div class="image-container">
 				<img src="Images/contact-page-8.jpg" alt="Event" class="image">
@@ -223,5 +229,28 @@ function birthday() {
 }
 </script>
 <script src="./headerLogic.js"></script>
+<?php
+	if(isset($_POST['Submit'])){
+
+		if(!isset($_SESSION['userid']) && !$_SESSION['loggedin']==true){
+        	echo "<script> location.href='./loginform.php'; </script>";
+    		exit;
+    	}
+
+		$FirstName=$_POST["fname"];
+		$email=$_POST["email"];
+		$phone=$_POST["mobile"];
+		$option=$_POST["option"];
+		$date=$_POST["date"];
+		$Guest=$_POST["numberofguest"];
+		$option1=$_POST["option1"];
+		$option2=$_POST["option2"];
+		$Feedback=$_POST["Feedback"];
+
+		$SQL = "INSERT INTO `event`(`First_Name`, `email_id`, `type`, `date`, `num_Guest`, `type_of_Events`, `Time`, `Feedback`, `Mobile`) 
+		 VALUES ('". $FirstName ."','". $email ."','". $option ."','". $date ."','". $Guest ."','". $option1 ."','". $option2 ."','". $Feedback ."','". $phone ."')";
+		$result = mysqli_query($connection,$SQL) or die('Invalid query:'.mysqli_error($connection));
+	}
+?>
 </body>
 </html>
